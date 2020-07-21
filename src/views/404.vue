@@ -2,14 +2,14 @@
  * @Author: zpliu 
  * @Date: 2020-07-21 15:39:00 
  * @Last Modified by: zpliu
- * @Last Modified time: 2020-07-21 15:40:54
+ * @Last Modified time: 2020-07-21 20:39:36
  * reference https://codepen.io/Navedkhan012/pen/vrWQMY
  * forward router with 404
  */
 <template>
   <section class="page_404">
-    <el-row>
-      <el-col :sm="12" :offset="6">
+    <el-row type="flex" justify="center">
+      <el-col :xs="24" :sm="12">
         <div class="four_zero_four_bg">
           <h1 class="text-center">404</h1>
         </div>
