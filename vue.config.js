@@ -1,3 +1,9 @@
+const path = require('path')
+function resolve(dir) {
+  return path.join(__dirname, dir)
+}
+// var targetURL = 'http://cotton.hzau.edu.cn:80/web'
+// var targetURL = 'http://localhost:8081'
 module.exports = {
   // publicPath: 'https://zpliu1126.github.io/About',
   // publicPath: 'http://cotton.hzau.edu.cn/web/public/seminar/',
@@ -14,6 +20,14 @@ module.exports = {
         pathRewrite: {
           '^/api': '/',
         },
+      },
+    },
+  },
+  configureWebpack: {
+    name: 'cottonWeb',
+    resolve: {
+      alias: {
+        '@': resolve('src'), //给源代码配置别名
       },
     },
   },

@@ -27,6 +27,7 @@ request.interceptors.request.use(
 request.interceptors.response.use(
   (response) => {
     Nprogress.done()
+    console.log(response)
     return handleReponse(response)
   },
   (error) => {
@@ -36,7 +37,10 @@ request.interceptors.response.use(
 )
 
 function handleReponse(response) {
-  if (response.data.code) {
+  if (response.data && parseInt(response.data.code) === 0) {
+    console.log(response)
+    return response
+  } else {
     switch (parseInt(response.data.code)) {
       case 0:
         break
@@ -54,8 +58,12 @@ function handleReponse(response) {
           duration: 5000,
         })
     }
+    return Promise.reject(
+      new Error(
+        response.data.code ? 'error code:' + response.data.code : 'Error'
+      )
+    )
   }
-  return response
 }
 export default request
 // module.exports = {
