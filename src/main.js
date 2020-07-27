@@ -7,6 +7,8 @@ import store from './store'
 Vue.use(VueRouter)
 Vue.use(ElementUI)
 
+import 'animate.css'
+
 import router from '@/routers/'
 import App from './App.vue'
 Vue.config.productionTip = false

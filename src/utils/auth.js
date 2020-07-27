@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie'
-const TokenKey = 'token'
+const TokenKey = 'cottonweb_tooken'
 export function getToken() {
   return Cookies.get(TokenKey)
 }

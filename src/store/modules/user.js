@@ -4,7 +4,7 @@ import { getToken, setToken } from '@/utils/auth'
 const getDefaultState = () => {
   return {
     token: getToken(),
-    name: '',
+    username: '',
   }
 }
 
@@ -25,10 +25,9 @@ const actions = {
     return new Promise((resolve, reject) => {
       login({ username: username.trim(), password: password })
         .then((reponse) => {
-          const { data } = reponse
-          console.log(data)
-          commit('SET_TOKEN', data.code)
-          setToken(data.code)
+          const { token } = reponse.data
+          commit('SET_TOKEN', token)
+          setToken(token)
           resolve(reponse)
         })
         .catch((err) => {

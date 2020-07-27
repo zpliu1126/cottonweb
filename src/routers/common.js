@@ -2,7 +2,7 @@
  * @Author: zpliu
  * @Date: 2020-07-21 12:46:31
  * @Last Modified by: zpliu
- * @Last Modified time: 2020-07-21 18:33:07
+ * @Last Modified time: 2020-07-27 19:36:57
  * this file contain some commond routers
  * + home
  * + 404
@@ -10,8 +10,11 @@
 
 export default [
   {
-    path: '/',
+    path: '/home',
     name: 'home',
+    component: () => {
+      return import('@/views/home/index.vue')
+    },
     meta: { title: 'cottonweb' },
     // component: () => import('@/components/searchTag.vue'),
   },

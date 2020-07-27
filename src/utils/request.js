@@ -36,7 +36,7 @@ request.interceptors.response.use(
 )
 
 function handleReponse(response) {
-  if (response.data && parseInt(response.data.code) === 0) {
+  if (response.data && parseInt(response.data.code) <= 400) {
     return response.data
   } else {
     switch (parseInt(response.data.code)) {

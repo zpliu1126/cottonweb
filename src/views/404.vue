@@ -31,7 +31,7 @@ export default {
   methods: {
     handlegoHome() {
       this.$router.push({
-        path: "/",
+        path: "/home",
         name: "home"
       });
     }
