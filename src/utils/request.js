@@ -27,7 +27,6 @@ request.interceptors.request.use(
 request.interceptors.response.use(
   (response) => {
     Nprogress.done()
-    console.log(response)
     return handleReponse(response)
   },
   (error) => {
@@ -38,8 +37,7 @@ request.interceptors.response.use(
 
 function handleReponse(response) {
   if (response.data && parseInt(response.data.code) === 0) {
-    console.log(response)
-    return response
+    return response.data
   } else {
     switch (parseInt(response.data.code)) {
       case 0:
