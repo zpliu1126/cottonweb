@@ -48,7 +48,7 @@ export default {
           name: "yxlong",
         },
         {
-          src: "https://avatars2.githubusercontent.com/u/67858280?s=460&v=4",
+          src: "https://s1.ax1x.com/2020/06/21/N8CeIO.png",
           name: "xingchang-web",
         },
       ],

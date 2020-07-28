@@ -2,7 +2,7 @@
  * @Author: zpliu
  * @Date: 2020-07-21 12:46:31
  * @Last Modified by: zpliu
- * @Last Modified time: 2020-07-28 09:02:36
+ * @Last Modified time: 2020-07-28 14:02:44
  * this file contain some commond routers
  * + home
  * + 404
@@ -21,21 +21,6 @@ export default [
           return import('@/views/home')
         },
         meta: { title: 'cottonWeb' },
-      },
-    ],
-  },
-  {
-    path: '/tools/blast',
-    component: HomeLayout,
-    redirect: '/tools/blast/index',
-    children: [
-      {
-        path: '/tools/blast/index',
-        name: 'Blast',
-        component: () => {
-          return import('@/views/404.vue')
-        },
-        meta: { title: 'Blast' },
       },
     ],
   },

@@ -9,13 +9,23 @@
       </el-col>
       <el-col :md="12" :xs="8" :offset="4">
         <el-menu mode="horizontal">
-          <el-menu-item index="1">Home</el-menu-item>
+          <el-menu-item index="1">
+            <el-link href="#/home">Home</el-link>
+          </el-menu-item>
           <el-submenu index="2">
             <template slot="title">Genome</template>
-            <el-menu-item index="2-1">Gossypium arboreum</el-menu-item>
-            <el-menu-item index="2-2">Gossypium raimondii</el-menu-item>
-            <el-menu-item index="2-3">Gossypium hirsutum</el-menu-item>
-            <el-menu-item index="2-4">Gossypium barbadense</el-menu-item>
+            <el-menu-item index="2-1">
+              <el-link href="#/A2">Gossypium arboreum</el-link>
+            </el-menu-item>
+            <el-menu-item index="2-2">
+              <el-link href="#/D5">Gossypium raimondii</el-link>
+            </el-menu-item>
+            <el-menu-item index="2-3">
+              <el-link href="#/A1D1">Gossypium hirsutum</el-link>
+            </el-menu-item>
+            <el-menu-item index="2-4">
+              <el-link href="#/A2D2">Gossypium barbadense</el-link>
+            </el-menu-item>
           </el-submenu>
           <el-submenu index="3">
             <template slot="title">Tools</template>
@@ -26,17 +36,31 @@
                 href="http://cotton.hzau.edu.cn/tools/jbrowse/"
               >JBrowse</el-link>
             </el-menu-item>
-            <el-menu-item index="3-2">Blast</el-menu-item>
+            <el-menu-item index="3-2">
+              <el-link href="#/tools/blast">Blast</el-link>
+            </el-menu-item>
           </el-submenu>
           <el-submenu index="4">
             <template slot="title">Search</template>
-            <el-menu-item index="4-1">search by gene id</el-menu-item>
-            <el-menu-item index="4-2">search Primer</el-menu-item>
-            <el-menu-item index="4-2">search CRISPR</el-menu-item>
+            <el-menu-item index="4-1">
+              <el-link href="#/search/geneId">search by gene id</el-link>
+            </el-menu-item>
+            <el-menu-item index="4-2">
+              <el-link href="#/search/primer">search Primer</el-link>
+            </el-menu-item>
+            <el-menu-item index="4-2">
+              <el-link href="#/search/crispr">search CRISPR</el-link>
+            </el-menu-item>
           </el-submenu>
-          <el-menu-item index="5">Download</el-menu-item>
-          <el-menu-item index="6">Login</el-menu-item>
-          <el-menu-item index="7">Register</el-menu-item>
+          <el-menu-item index="5">
+            <el-link href="#/download">Download</el-link>
+          </el-menu-item>
+          <el-menu-item index="6">
+            <el-link href="#/login">Login</el-link>
+          </el-menu-item>
+          <el-menu-item index="7">
+            <el-link href="#/register">Register</el-link>
+          </el-menu-item>
         </el-menu>
       </el-col>
     </el-row>
