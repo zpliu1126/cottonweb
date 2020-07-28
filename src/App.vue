@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view />
+    <transition enter-active-class="animate__animated animate__fadeInUp">
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -9,5 +11,9 @@ export default {
   name: "APP",
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
+body {
+  margin: 0 0;
+  padding: 0 0;
+}
 </style>

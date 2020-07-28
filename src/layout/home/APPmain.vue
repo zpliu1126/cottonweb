@@ -1,6 +1,6 @@
 <template>
   <div>
-    <transition>
+    <transition enter-active-class="animate__animated animate__fadeInDown">
       <router-view :key="key" />
     </transition>
   </div>
