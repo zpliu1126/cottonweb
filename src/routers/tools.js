@@ -9,9 +9,24 @@ export default [
         path: '/tools/blast/index',
         name: 'Blast',
         component: () => {
-          return import('@/views/404.vue')
+          return import('@/views/tools/blast+')
         },
-        meta: { title: 'Blast' },
+        meta: { title: 'Blast+' },
+      },
+    ],
+  },
+  {
+    path: '/tools/jbrowse',
+    component: HomeLayout,
+    redirect: '/tools/jbrowse/index',
+    children: [
+      {
+        path: '/tools/jbrowse/index',
+        name: 'jbrowse',
+        component: () => {
+          return import('@/views/tools/JBrowse')
+        },
+        meta: { title: 'JBrowse' },
       },
     ],
   },

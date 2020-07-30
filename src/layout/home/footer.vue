@@ -43,8 +43,9 @@ export default {
 <style lang='scss' scoped>
 .cotton-footer {
   margin-top: 40px;
-  border-bottom: 10px solid;
-  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+  border-bottom: 5px solid;
+  margin-bottom: 5px;
+  border-image: linear-gradient(#353b48, #2f3640, #718093, #273c75, #192a56) 3;
 }
 .footer-item {
   display: flex;

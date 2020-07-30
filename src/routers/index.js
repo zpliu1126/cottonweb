@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Nprogress from 'nprogress'
 Vue.use(VueRouter)
 let routes = []
+/**
+ * 自动注册
+ */
 const requireContext = require.context('./', true, /\.js$/)
 requireContext.keys().forEach((filename) => {
   if (filename === './index.js') {

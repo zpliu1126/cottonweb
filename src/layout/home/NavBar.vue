@@ -30,26 +30,22 @@
           <el-submenu index="3">
             <template slot="title">Tools</template>
             <el-menu-item index="3-1">
-              <el-link
-                :underline="false"
-                target="_blank"
-                href="http://cotton.hzau.edu.cn/tools/jbrowse/"
-              >JBrowse</el-link>
+              <el-link href="#/tools/jbrowse">JBrowse</el-link>
             </el-menu-item>
             <el-menu-item index="3-2">
-              <el-link href="#/tools/blast">Blast</el-link>
+              <el-link href="#/tools/blast">Blast+</el-link>
             </el-menu-item>
           </el-submenu>
           <el-submenu index="4">
             <template slot="title">Search</template>
             <el-menu-item index="4-1">
-              <el-link href="#/search/geneId">search by gene id</el-link>
+              <el-link href="#/search/geneId">Gene&Transcript</el-link>
             </el-menu-item>
             <el-menu-item index="4-2">
-              <el-link href="#/search/primer">search Primer</el-link>
+              <el-link href="#/search/primer">Primer</el-link>
             </el-menu-item>
             <el-menu-item index="4-2">
-              <el-link href="#/search/crispr">search CRISPR</el-link>
+              <el-link href="#/search/crispr">CRISPR</el-link>
             </el-menu-item>
           </el-submenu>
           <el-menu-item index="5">
@@ -76,7 +72,7 @@ export default {
 .cotton-navbar {
   .el-row {
     border-top: 10px solid;
-    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+    // border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
     margin-bottom: 20px;
   }
 }
