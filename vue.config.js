@@ -6,7 +6,7 @@ function resolve(dir) {
 // var targetURL = 'http://localhost:8081'
 module.exports = {
   // publicPath: 'https://zpliu1126.github.io/About',
-  // publicPath: 'http://cotton.hzau.edu.cn/web/public/cottonweb',
+  publicPath: 'http://cotton.hzau.edu.cn/web/public/cottonweb',
   devServer: {
     sockHost: 'http://localhost:8080/', // 配置开发环境地址
     disableHostCheck: true,

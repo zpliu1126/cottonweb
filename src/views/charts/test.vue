@@ -23,7 +23,7 @@ export default {
       },
       xAxis: {
         type: "category",
-        data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"],
+        data: ["root", "seed", "0DFiber", "5DFiber", "10DFiber", "20DFiber"],
       },
       yAxis: {
         type: "value",
